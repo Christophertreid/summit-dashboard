@@ -1,0 +1,19 @@
+@use '../abstract/variables' as v
+.tooltip
+  position: relative
+  .tool-text
+    transition-delay: 1000ms
+    visibility: hidden
+    position: absolute
+    top:2rem
+    left:50%
+    transform: translate(-50%, 0%)
+    padding: v.$pad-1
+    border-radius: 0.25rem
+    background-color: v.$charcoal
+    color: v.$white
+  &:hover .tool-text
+    visibility: visible
+    z-index:1
+
+  

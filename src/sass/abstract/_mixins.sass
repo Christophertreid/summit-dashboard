@@ -1,0 +1,13 @@
+//breakpoints
+@mixin phone
+  @media(max-width: calc(30rem - 1px))
+    @content
+@mixin tablet
+  @media(min-width: 30rem)
+    @content
+@mixin desktop
+  @media(min-width: 48rem)
+    @content
+      
+
+  

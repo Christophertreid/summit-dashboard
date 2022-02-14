@@ -1,0 +1,29 @@
+@use '../abstract/variables' as v
+@use '../abstract/mixins' as m
+.sidebar
+  width: fit-content
+  height: calc(100vh - 5rem)
+  background-color: v.$sum-blue
+  ul
+    height: 100%
+    padding: 2rem calc(0.25rem + 1vw)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  li
+    list-style: none
+    a
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      padding: 1rem 0
+      color: v.$white
+      svg
+          height: 2rem
+          margin: 0.25rem
+          fill: v.$white
+      span
+        &:nth-of-type(2)
+          @include m.phone
+            display: none

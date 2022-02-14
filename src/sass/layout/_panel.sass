@@ -1,0 +1,58 @@
+@use '../components/button'
+@use '../abstract/variables' as v
+
+.panel
+  width: 100%
+  height: calc(100vh - 7rem)
+  margin: 1rem
+  background-color: white
+  border-radius: 0.5rem
+  overflow-y: hidden
+
+.panel--product__menu
+  height: 4rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  padding: 1rem
+  border-bottom: 2px solid v.$lt-grey
+  div
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 38rem
+
+.panel--product--card
+  height: calc(100% - 8rem)
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  gap: 1rem
+  padding: 2rem
+
+.panel--product__view
+  font-family: Roboto
+  width: fit-content
+  padding: 2rem
+  line-height: 1.5
+  margin: 0 auto
+  h2
+    margin-bottom: 1rem
+  dl
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    gap: 1rem
+    max-width: 20rem
+    img
+      border-radius: 0.25rem
+    div
+      display: flex
+      justify-content: space-between
+  .controls
+    display: flex
+    justify-content: space-between
+    margin-top: 1rem
+  
+
