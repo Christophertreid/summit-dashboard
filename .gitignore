@@ -7,7 +7,6 @@
 .env-template
 
 # firebase config file
- firebaseConfig.js
 
 # Parcel Development Files
 /.parcel-cache
