@@ -1,5 +1,6 @@
 @use '../components/button'
 @use '../abstract/variables' as v
+@use '../abstract/mixins' as m
 
 .panel
   width: 100%
@@ -7,21 +8,23 @@
   margin: 1rem
   background-color: white
   border-radius: 0.5rem
-  overflow-y: hidden
+  overflow-y: scroll
 
 .panel--product__menu
-  height: 4rem
+  //height: 4rem
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  align-items: center
+  align-items: baseline
   padding: 1rem
   border-bottom: 2px solid v.$lt-grey
   div
-    display: flex
-    align-items: center
-    justify-content: space-around
-    width: 38rem
+    display: none
+    @include m.desktop
+      display: flex
+      align-items: center
+      justify-content: space-around
+      width: 38rem
 
 .panel--product--card
   height: calc(100% - 8rem)
@@ -40,19 +43,22 @@
   h2
     margin-bottom: 1rem
   dl
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    gap: 1rem
-    max-width: 20rem
-    img
-      border-radius: 0.25rem
-    div
+    @include m.tablet
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      gap: 1rem
+      max-width: 20rem
+      img
+        border-radius: 0.25rem
+      div
+        display: flex
+        justify-content: space-between
+  .controls
+    margin-top: 1rem
+    @include m.tablet
       display: flex
       justify-content: space-between
-  .controls
-    display: flex
-    justify-content: space-between
-    margin-top: 1rem
+      
   
 

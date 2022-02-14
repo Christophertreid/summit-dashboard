@@ -12,7 +12,7 @@ All CRUD operations are executed using Firebase's Real Time Database (RTD)
 and storage. 
 ### Issues to be Fixed/Features to be Added in the Product Management System
 * Additional filtering/sorting of product data on the view page as per the 
-  current appbar layout
+  current appbar layout and include a fullscreen menu version in mobile
 * Potential addition of search functionality to quickly find products, orders, or      customers
 * Addition of a togglable table view to quickly manage product data
   ![Image](table-view.png) 
